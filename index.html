@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northern Ledger Automation</title>
+<meta name="description" content="Northern Ledger Automation is a private content production and YouTube publishing management application used by a single operator.">
+<meta name="theme-color" content="#0E1A2E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230E1A2E'/%3E%3Crect x='14' y='20' width='36' height='2' fill='%23C9A46A'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='24' font-weight='700' text-anchor='middle' fill='%23F5F1E8'%3ENL%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <div class="topline">
+      <span class="kicker">Northern Ledger</span>
+      <nav aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+    <div class="hairline" aria-hidden="true"></div>
+    <h1>Northern Ledger Automation</h1>
+    <p class="lede">A private content production and YouTube publishing management application.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h2>What it is</h2>
+    <p>Northern Ledger Automation is software used by a single operator to produce short vertical news videos and to manage their publication on the operator's own YouTube channel, <em>Northern Ledger</em>.</p>
+    <p>It is not a public service. It has no sign-up, no customer accounts and no users other than its operator, and it does not publish on behalf of anyone else.</p>
+
+    <h2>What it does</h2>
+    <ul>
+      <li>Collects news items from public sources and organises the material for short explainer videos about world events and finance.</li>
+      <li>Assembles and renders each video, checks it, and prepares its title, description and tags.</li>
+      <li>Presents every finished video to the operator for review.</li>
+      <li>After the operator's explicit approval of that specific video, uploads it to the operator's own YouTube channel as an unlisted video.</li>
+    </ul>
+
+    <h2>Human approval for every upload</h2>
+    <p>Nothing is uploaded automatically. Each approval applies only to the exact video the operator reviewed; if the file changes afterwards, the upload is refused. The application is configured to upload videos as unlisted and does not publish them as public.</p>
+
+    <h2>How the application uses Google and YouTube</h2>
+    <p>To publish, the application asks the operator to authorize access to their own YouTube channel through Google's standard OAuth consent screen. It requests two permissions:</p>
+    <ul>
+      <li><strong>Manage your YouTube videos</strong> (<code>youtube.upload</code>): used only to upload videos that the operator has approved.</li>
+      <li><strong>View your YouTube account</strong> (<code>youtube.readonly</code>): requested together with the upload permission. The application does not currently read any data from the channel with it. It is reserved for a planned check that the connected channel is the intended one; this page and the Privacy Policy will be updated before that check is switched on.</li>
+    </ul>
+    <p>The application does not read comments, messages, analytics or subscriber data, and it does not sell Google user data, share it for advertising, or use it to train AI models. The full details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this application or its use of Google and YouTube data: <a href="mailto:actuality.ro@gmail.com">actuality.ro@gmail.com</a>.</p>
+  </div>
+</main>
+
+<footer class="band">
+  <div class="wrap">
+    <p><a href="privacy.html">Privacy Policy</a></p>
+    <p>Northern Ledger Automation is an independent project operated by Northern Ledger. It is not affiliated with, endorsed by or sponsored by Google or YouTube. YouTube is a trademark of Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>
